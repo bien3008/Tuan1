@@ -178,7 +178,29 @@ public class MyClass {
     }
 }
 ```
+### 2. Constructor có tham số (Parameterized Constructor)
+có thể định nghĩa constructor với tham số để khởi tạo đối tượng với các giá trị cụ thể.
+```java
+public class MyClass {
+    private int id;
+    private String name;
 
+    // Constructor có tham số
+    public MyClass(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public void display() {
+        System.out.println("ID: " + id + ", Name: " + name);
+    }
+
+    public static void main(String[] args) {
+        MyClass obj = new MyClass(1, "John"); // Gọi constructor có tham số
+        obj.display(); // Hiển thị thông tin đối tượng
+    }
+}
+```
 ### 7.3. Access Modifier (Các từ khóa truy cập)
 Java cung cấp các từ khóa truy cập để kiểm soát quyền truy cập vào các thành phần của lớp:
 - **public**: Có thể truy cập từ bất kỳ đâu.
